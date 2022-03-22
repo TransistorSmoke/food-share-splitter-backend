@@ -52,6 +52,10 @@ app.get('/orders', (req, res) => {
   res.json({ people: people });
 });
 
+app.post('/orders', (req, res) => {
+  console.log(req);
+});
+
 // Check ports for successful run of server
 app.listen(PORT, () => {
   console.log(`You are now listening at PORT ${PORT}.`);
