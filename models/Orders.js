@@ -5,7 +5,6 @@ const OrdersSchema = mongoose.Schema({
   orderDate: {
     type: Date,
     default: Date.now(),
-    required: true,
   },
   orderItem: {
     type: String,
@@ -18,7 +17,6 @@ const OrdersSchema = mongoose.Schema({
   orderShares: {
     type: Number,
     default: 4,
-    required: true,
   },
 });
 
